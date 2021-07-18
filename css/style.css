@@ -1,23 +1,83 @@
 body {
-    margin: 0;
-    background: linear-gradient(160deg, #00d2ff 0%, #3a47d5 100%);
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  background: #2a2829;
 }
 
 main {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    -webkit-align-content: center;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.heading-center {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ffffff;
+.f-white {
+  color: #ffffff;
 }
 
-.italic{
-    font-style: italic
+h1 {
+  text-align: center;
+}
+
+.italic {
+  font-style: italic;
+}
+
+#profile-pic {
+  width: 16vh;
+  height: 16vh;
+  background-image: url(../img/akshay-dp.png);
+  background-repeat: no-repeat;
+  background-position-y: 10px;
+  background-size: cover;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.bg-red {
+  background-color: #f35363;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-0 {
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 10px 32px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.btn-rounded {
+  border-radius: 32px;
+}
+
+.btn-primary {
+  background-color: #151616;
+  color: #ffff;
+  font-size: small;
+}
+
+.btn-primary:hover {
+  padding: 10px 36px;
+  background-color: #090909;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #ffff;
+  padding: 0px 12px;
 }
