@@ -31,6 +31,23 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-J5LZ8EB9SF');
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var links = document.getElementsByTagName('a');
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var url = event.target.href;
+                    gtag('event', 'click', {
+                        'event_category': 'Outbound Link',
+                        'event_label': url
+                    });
+                    setTimeout(function () {
+                        window.location.href = url;
+                    }, 100);
+                });
+            }
+        });
     </script>
 </head>
 
