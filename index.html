@@ -30,7 +30,10 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'G-J5LZ8EB9SF');
+
+        gtag('config', 'G-J5LZ8EB9SF', {
+            'page_location': window.location.href
+        });
 
         document.addEventListener('DOMContentLoaded', function () {
             var links = document.getElementsByTagName('a');
